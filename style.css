@@ -8,3 +8,26 @@
 {
     text-align: center;
 }
+
+h1
+{
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+input
+{
+    margin: 1rem;
+    width: 25rem;
+    text-align: center;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button
+{
+    width: 7rem;
+    height: 2.1rem;
+    font-size: 1rem;
+}
