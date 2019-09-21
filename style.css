@@ -21,20 +21,28 @@ h1
     font-size: 6rem;
     margin-top: 2rem;
     text-shadow: 7px 5px black;
-    color: red;
+    color: rgb(230, 0, 0);
 }
 
 h2
 {
     font-size: 5rem;
     margin: 1rem 0 2rem 0;
-    text-shadow: 5px 3px black;
-    color:  rgb(150, 150, 150);
+    text-shadow: 5px 3px rgb(230, 0, 0);
+}
+
+h3
+{
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 10rem;
+    text-shadow: 5px 5px black;
+    color: rgb(230, 0, 0);
 }
 
 input
 {
-    margin: 1rem;
+    margin: 3rem;
     width: 25rem;
     text-align: center;
     height: 2rem;
@@ -53,8 +61,9 @@ button
 
 li
 {
+    list-style: none;
     font-size: 3rem;
-    text-shadow: 2px 2px rgb(150, 150, 150);
+    text-shadow: 2px 2px rgb(170, 170, 170);
     counter-increment: course;
     padding-top: 1.2rem;
 }
@@ -63,7 +72,7 @@ li:before
 {
     content: counter(course);
     margin-right: 1rem;
-    background: rgb(240,0,0);
+    background: rgb(230, 0, 0);
     color: whitesmoke;
     border-radius: 60px;
     font-weight: bold;
