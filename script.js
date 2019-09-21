@@ -20,3 +20,7 @@ function restartInput() {
     input.value = "";
 }
 
+function createLi() {
+    li = document.createElement("li");
+}
+
