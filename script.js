@@ -32,3 +32,7 @@ function textToLi() {
     li.append(document.createTextNode(CapitalizeText()));
 }
 
+function listToUl() {
+    ul.insertAdjacentElement("beforeend", li);
+}
+
