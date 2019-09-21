@@ -36,3 +36,10 @@ function listToUl() {
     ul.insertAdjacentElement("beforeend", li);
 }
 
+function listInUl() {
+    createLi();
+    textToLi();
+    listToUl();
+    restartInput();
+}
+
