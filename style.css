@@ -30,4 +30,27 @@ button
     width: 7rem;
     height: 2.1rem;
     font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+li
+{
+    font-size: 3rem;
+    text-shadow: 2px 2px rgb(200, 200, 200);
+    counter-increment: course;
+    padding-top: 1.2rem;
+}
+
+li:before
+{
+    content: counter(course);
+    margin-right: 1rem;
+    background: rgb(56, 156, 163);
+    color: whitesmoke;
+    border-radius: 60px;
+    font-weight: bold;
+    border-radius: 60px;
+	border-radius: 60px;
+    padding: 0.5rem 1rem;
+    text-shadow: 1px 1px black;
 }
