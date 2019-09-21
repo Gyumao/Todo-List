@@ -43,3 +43,18 @@ function listInUl() {
     restartInput();
 }
 
+function addListAfterClick() {
+    if (inputValueLength() > 0) {
+        listInUl();
+    }
+}
+
+function addListAfterKeypress(event) {
+    if (inputValueLength() > 0 && event.keyCode === 13) {
+        listInUl();
+    }
+}
+
+button.addEventListener("click", addListAfterClick);
+
+input.addEventListener("keypress", addListAfterKeypress);
