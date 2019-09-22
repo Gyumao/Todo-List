@@ -35,22 +35,47 @@ function listToUl() {
     ul.insertAdjacentElement("beforeend", li);
 }
 
-function listInUl() {
+function recallFunListInUl() {
     createLi();
     textToLi();
     listToUl();
     restartInput();
+    recallFunRemovesButton();
+}
+
+function createRemovesButton() {
+    let removesButton = document.createElement("delete");
+    let removesButtonIcon = document.createTextNode("\u00D7");
+    removesButton.className = "removes";
+    removesButton.append(removesButtonIcon);
+    li.append(removesButton);
+}
+
+function removesLi() {
+    let del = document.getElementsByClassName("removes");
+    let list;
+    for (let i = 0; i < del.length; i++) {
+            del[i].onclick = function () {
+                list  = this.parentElement;
+                list.remove();
+        };
+    }
+}
+
+function recallFunRemovesButton() {
+    createRemovesButton();
+    removesLi();
 }
 
 function addListAfterClick() {
     if (inputValueLength() > 0) {
-        listInUl();
+        recallFunListInUl();
     }
 }
 
-function addListAfterKeypress(event) {
-    if (inputValueLength() > 0 && event.keyCode === 13) {
-        listInUl();
+function addListAfterKeypress(action) {
+    if (inputValueLength() > 0 && action.keyCode === 13) {
+        recallFunListInUl();
     }
 }
 
