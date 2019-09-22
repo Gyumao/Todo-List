@@ -1,7 +1,7 @@
 `use strict`;
 
 const button = document.getElementById("validation");
-const input = document.getElementById("imputusr");
+const input = document.getElementById("inputusr");
 const ul = document.querySelector("ul");
 let li;
 
