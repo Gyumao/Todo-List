@@ -5,9 +5,9 @@ const input = document.getElementById("imputusr");
 const ul = document.querySelector("ul");
 let li;
 
-stl();
+addStl();
 
-function stl(){
+function addStl(){
 document.body.style.fontFamily = "Lobster";
 }
 
