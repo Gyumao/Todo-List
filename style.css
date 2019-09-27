@@ -89,3 +89,18 @@ li:before
     padding: 0.5rem 1rem;
     text-shadow: 2px 2px rgb(2, 2, 2);
 }
+
+    .contact-footer
+    {
+    text-align: center;
+    margin: 3rem 0;
+    }
+    
+    .p-footer
+    {
+    color: rgb(230, 0, 0);
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    }
